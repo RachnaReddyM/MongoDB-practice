@@ -9,13 +9,13 @@ const alice ={
 };
 
 const bob ={
-    _id:123,
-    username:"alice",
-    password:"alice",
-    firstName:"Alice",
-    lastName:"Wonderland",
-    gradYear: 2020,
-    scholarship:15000
+    _id:234,
+    username:"bob",
+    password:"bob",
+    firstName:"Bob",
+    lastName:"Hope",
+    gradYear: 2021,
+    scholarship:12000
 };
 
 const question321truefalse={
@@ -103,4 +103,27 @@ const answer890={
     _id:890,
     multipleChoiceAnswer: 4
 };
+
+
+const allStudents  =[alice,bob];
+const newquestion321 = {q:question321,c:question321truefalse};
+const newquestion432 = {q:question432,c:question432truefalse};
+const newquestion543 = {q:question543,c:question543choice};
+const newquestion654 = {q:question654,c:question654choice};
+
+const allQuestions = [newquestion321,newquestion432,newquestion543,newquestion654];
+
+const newanswer123 = {a:answer123,q:321,s:123};
+const newanswer234 = {a:answer234,q:432,s:123};
+const newanswer345 = {a:answer345,q:543,s:123};
+const newanswer456 = {a:answer456,q:654,s:123};
+const newanswer567 = {a:answer567,q:321,s:234};
+const newanswer678 = {a:answer678,q:432,s:234};
+const newanswer789 = {a:answer789,q:543,s:234};
+const newanswer890 = {a:answer890,q:654,s:234};
+
+const allAnswers = [newanswer123,newanswer234,newanswer345,newanswer456,newanswer567,newanswer678,newanswer789,newanswer890];
+
+const values = {allStudents,allQuestions,allAnswers};
+module.exports = {values};
 
